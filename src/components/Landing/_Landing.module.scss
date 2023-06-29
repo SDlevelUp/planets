@@ -1,0 +1,38 @@
+.hero {
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+
+    .hero-img {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .hero-section {
+        text-align: center;
+        position: absolute;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        top: 40vh;
+        z-index: 99;
+
+        &-title {
+            font-size: 4rem;
+            color: #fff;
+            text-transform: capitalize;
+        }
+
+        &-description {
+            margin-block: 1.2rem;
+            font-size: 1.3rem;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+    }
+
+
+}
