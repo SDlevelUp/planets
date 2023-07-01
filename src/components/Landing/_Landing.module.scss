@@ -1,3 +1,5 @@
+@import "../../scss/_mixins.scss";
+
 .hero {
     height: 100vh;
     width: 100%;
@@ -32,7 +34,50 @@
             font-weight: 300;
             text-transform: uppercase;
         }
+
+        &-buttons {
+            @include flex-between-row;
+
+            button {
+                background: #fff;
+                color: rgb(10, 10, 10);
+                border: 2px solid rgb(255, 255, 255);
+                text-transform: uppercase;
+                position: relative;
+                z-index: 1;
+                transition: color 400ms;
+                margin-inline: 0.3rem;
+                padding-block: 0.6rem;
+                padding-inline: 2.5rem;
+                border: 1px solid;
+                border-radius: 4px;
+                outline: none;
+                text-transform: uppercase;
+                font-size: 0.9rem;
+                background-color: transparent;
+                color: white;
+                cursor: pointer;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(201, 128, 128, 0.817);
+                    z-index: -1;
+                    @include button-transition;
+                }
+
+                &:hover::before {
+                    transform: scaleX(1);
+                }
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
     }
-
-
 }

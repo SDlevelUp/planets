@@ -1,0 +1,28 @@
+@mixin prefixing($prop, $value) {
+    -webkit-#{$prop}: #{$value};
+    -moz-#{$prop}: #{$value};
+    -ms-#{$prop}: #{$value};
+    -o-#{$prop}: #{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin prefixing-values($prop, $value) {
+    #{$prop}: -webkit-#{$value};
+    #{$prop}: -moz-#{$value};
+    #{$prop}: -ms-#{$value};
+    #{$prop}: -o-#{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin flex-between-row {
+    @include prefixing(display, flex);
+    @include prefixing(justify-content, center);
+    @include prefixing(align-items, center);
+}
+
+@mixin button-transition {
+    @include prefixing(transform, scaleX(0));
+    @include prefixing(transform-origin, left);
+    @include prefixing('transition', '400ms ease-out');
+    @include prefixing(border-radius, 4px);
+}
