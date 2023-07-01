@@ -6,7 +6,7 @@ import Buttons from './Buttons';
 function Landing() {
     return (
         <div className={styles.hero}>
-            <img src={nebula} alt="nabula" className={styles["hero-img"]} />
+            <img src={nebula} alt="Nebula" className={styles["hero-img"]} />
 
             <div className={styles["hero-section"]}>
                 <h2 className={styles["hero-section-title"]}>un voyage infini</h2>

@@ -1,4 +1,4 @@
-
+import Navbar from "../../Navbar/Navbar";
 import Landing from "../../components/Landing/Landing";
 import { useEffect } from "react";
 function Home() {
@@ -9,6 +9,7 @@ function Home() {
 
     return (
         <div>
+            <Navbar />
             <Landing />
         </div>
 
