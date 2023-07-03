@@ -1,50 +1,61 @@
 @import '../scss/utils/mixins';
 
 .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    position: relative;
-    padding-block: 0.6rem;
-    padding-inline: 1.2rem;
-    @include flex-between-row;
     position: fixed;
     top: 0;
     left: 0;
     background-color: transparent;
-    text-align: center;
+    padding: 0.3rem 1.2rem;
     z-index: 99999;
     color: #fff;
+    transition: background-color 0.3s ease;
 
-    .menu-items {
-        display: flex;
-        text-transform: capitalize;
-        transform-origin: right top;
-        cursor: pointer;
+    &.scrolled {
+        background-color: #000;
+        /* Couleur de fond lorsque la page est défilée */
+    }
 
-
-        .menuItem {
-            transition: all 300ms ease-out;
-        }
-
-        li {
-            width: 100%;
-            display: block;
-            margin-inline: 1.2rem;
-        }
+    .logo {
+        font-size: 1rem;
+        color: #fff;
+        margin-right: 1rem;
+        /* Ajout d'un espace entre le logo et le bloc de <li> */
     }
 
     .menuIcon {
-        display: flex;
-        align-items: center;
-        color: #fff;
         display: none;
     }
 
+    .menu-items {
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        transform-origin: right top;
+        cursor: pointer;
+        flex-wrap: wrap;
+        overflow-x: auto;
 
-}
+        .menuItem {
+            transition: all 300ms ease-out;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
 
+        li {
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            margin-right: 0.3rem;
+            /* Ajustez cette valeur selon vos besoins */
+        }
+    }
 
-@media screen and (max-width:540px) {
-    .navbar {
+    @media screen and (max-width: 540px) {
         display: flex;
 
         .menu-items {
@@ -63,38 +74,17 @@
             transition: all 600ms ease-out;
             cursor: pointer;
 
-            .menuItem {
-                padding: 20px;
-                text-align: center;
-                cursor: pointer;
-            }
-
-            .menuItem:hover {
-                background: #fff;
-                color: #3f6eff;
-                cursor: pointer;
-            }
-
             &.visible {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
 
-
         .menuIcon {
             display: flex;
             align-items: center;
-            z-index: 999999;
             color: #3f6eff;
+            z-index: 999999;
         }
-
     }
-
-    .logo {
-        font-size: 1rem;
-        color: #fff;
-    }
-
-
 }

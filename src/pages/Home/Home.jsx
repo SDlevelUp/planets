@@ -1,5 +1,6 @@
 import Navbar from "../../Navbar/Navbar";
 import Landing from "../../components/Landing/Landing";
+import Footer from "../../components/Footer/Footer";
 import { useEffect } from "react";
 function Home() {
 
@@ -11,6 +12,8 @@ function Home() {
         <div>
             <Navbar />
             <Landing />
+            <Footer />
+
         </div>
     );
 }
