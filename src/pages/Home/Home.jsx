@@ -12,9 +12,6 @@ function Home() {
             <Navbar />
             <Landing />
         </div>
-
-
-
     );
 }
 
