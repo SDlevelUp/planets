@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import styles from './_Navbar.module.scss';
-import { MdClose, MdDehaze } from 'react-icons/md';
-import { MenuItems } from '../../data/MenuItems';
 
 const Navbar = () => {
-    const [clicked, setClicked] = useState(false);
+    const [click, setClick] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
-    const change = () => setClicked(!clicked);
+    const handleClick = () => setClick(!click);
 
     const handleScroll = () => {
         if (window.scrollY > 0) {
@@ -25,19 +25,29 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
-            <p className={styles.logo}>Planete</p>
-            <div className={styles.menuIcon} onClick={change}>
-                {clicked ? <MdClose /> : <MdDehaze />}
-            </div>
-            <ul className={`${styles['menu-items']} ${clicked ? styles.visible : ''}`}>
-                {MenuItems.map((item, index) => (
-                    <li key={index} className={item.cName}>
-                        {item.title}
-                    </li>
-                ))}
+        <div className={`${styles.header} ${scrolled ? styles['header-bg'] : ''}`}>
+            <Link to="/" className={styles.logo}>
+                GALAX²IE
+            </Link>
+            <ul className={`${styles['nav-menu']} ${click ? styles.active : ''}`}>
+                <li>
+                    <Link to="/">Accueil</Link>
+                </li>
+                <li>
+                    <Link to="/pricing">Galerie</Link>
+                </li>
+                <li>
+                    <Link to="/training">Astronomiet</Link>
+                </li>
+                <li>
+                    <Link to="/training">Contact</Link>
+                </li>
+
             </ul>
-        </nav>
+            <div className={styles.hamburger} onClick={handleClick}>
+                {click ? <FaTimes size={20} /> : <FaBars size={20} />}
+            </div>
+        </div>
     );
 };
 

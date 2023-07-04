@@ -21,10 +21,18 @@
         text-align: center;
         z-index: 99;
 
+        @include breakpoint(mid-screen) {
+            width: 90%;
+        }
+
         &-title {
             font-size: 4rem;
             color: $white;
             text-transform: capitalize;
+
+            @include breakpoint(mid-screen) {
+                font-size: 2rem;
+            }
         }
 
         &-description {
@@ -32,10 +40,19 @@
             font-size: 1.3rem;
             font-weight: 300;
             text-transform: uppercase;
+
+            @include breakpoint(mid-screen) {
+                font-size: 1rem;
+            }
         }
 
         &-buttons {
             @include flex-center-row;
+
+            @include breakpoint(mid-screen) {
+                @include flex-center-column;
+                gap: 1rem;
+            }
 
             button {
                 background: $white;
@@ -56,6 +73,8 @@
                     background: $background;
                     z-index: -1;
                     @include button-transition;
+
+
                 }
 
                 &:hover::before {

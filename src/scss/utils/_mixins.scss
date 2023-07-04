@@ -72,6 +72,26 @@
     @include prefixing(cursor, pointer);
 }
 
+@mixin breakpoint($point) {
+    @if $point ==mid-screen {
+        @media only screen and (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $point ==tablet {
+        @media only screen and (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @if $point ==mobile {
+        @media only screen and (max-width: 576px) {
+            @content;
+        }
+    }
+}
+
 @mixin transition($prop, $time, $func, $delaying) {
     @if $func ==ease {
         @include prefixing(transition, $prop #{$time}s ease #{$delaying}s);
