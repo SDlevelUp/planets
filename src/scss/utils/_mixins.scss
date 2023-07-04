@@ -20,9 +20,21 @@
     @include prefixing(align-items, center);
 }
 
+@mixin flex-center-column {
+    @include prefixing(display, flex);
+    @include prefixing(flex-direction, column);
+    @include prefixing(justify-content, center);
+}
+
 @mixin flex-between-row {
     @include prefixing(display, flex);
     @include prefixing(justify-content, space-between);
+    @include prefixing(align-items, center);
+}
+
+@mixin flex-space-around-row {
+    @include prefixing(display, flex);
+    @include prefixing(justify-content, space-around);
     @include prefixing(align-items, center);
 }
 
