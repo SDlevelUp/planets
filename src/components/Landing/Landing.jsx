@@ -1,13 +1,12 @@
 import React from 'react';
 import styles from './_Landing.module.scss';
-import nebula from '../../assets/nebula.png';
+import galaxy from '../../assets/galaxynight.jpg';
 import Buttons from './Buttons';
 
 function Landing() {
     return (
         <div className={styles.hero}>
-            <img src={nebula} alt="Nebula" className={styles["hero-img"]} />
-
+            <img src={galaxy} alt="Galaxy night" className={styles["hero-img"]} />
             <div className={styles["hero-section"]}>
                 <h2 className={styles["hero-section-title"]}>un voyage infini</h2>
                 <p className={styles["hero-section-description"]}>explorez l'univers et découvrez les merveilles des planètes.</p>
@@ -16,5 +15,4 @@ function Landing() {
         </div>
     )
 }
-
 export default Landing;

@@ -27,20 +27,20 @@ const Navbar = () => {
     return (
         <div className={`${styles.header} ${scrolled ? styles['header-bg'] : ''}`}>
             <Link to="/" className={styles.logo}>
-                GALAX²IE
+                GALAXIE
             </Link>
             <ul className={`${styles['nav-menu']} ${click ? styles.active : ''}`}>
                 <li>
                     <Link to="/">Accueil</Link>
                 </li>
                 <li>
-                    <Link to="/pricing">Galerie</Link>
+                    <Link to="/galerie">Galerie</Link>
                 </li>
                 <li>
-                    <Link to="/training">Astronomiet</Link>
+                    <Link to="/astronomie">Astronomie</Link>
                 </li>
                 <li>
-                    <Link to="/training">Contact</Link>
+                    <Link to="/contact">Contact</Link>
                 </li>
 
             </ul>

@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Mercure",
+        "imageUrl": "mercury.jpg",
+        "definition": "Mercure est la planète la plus proche du Soleil et la plus petite du système solaire.",
+        "distance": "0.39 ua",
+        "type": "Rocheuse"
+    },
+    {
+        "name": "Vénus",
+        "imageUrl": "venus.jpg",
+        "definition": "Vénus est la deuxième planète du système solaire et est souvent appelée la planère soeur de la Terre.",
+        "distance": "0.72 ua",
+        "type": "Rocheuse"
+    },
+    {
+        "name": "Terre",
+        "imageUrl": "earth.jpg",
+        "definition": "La Terre est notre planète, où se trouve la vie telle que nous la connaissons.",
+        "distance": "1 ua",
+        "type": "Rocheuse"
+    },
+    {
+        "name": "Mars",
+        "imageUrl": "mars.jpg",
+        "definition": "Mars est souvent appelée la planete rouge en raison de sa couleur distinctive.",
+        "distance": "1.52 ua",
+        "type": "Rocheuse"
+    },
+    {
+        "name": "Jupiter",
+        "imageUrl": "jupiter.jpg",
+        "definition": "Jupiter est la plus grande planète du système solaire et est une planète gazeuse.",
+        "distance": "5.20 ua",
+        "type": "Gazeuse"
+    },
+    {
+        "name": "Saturne",
+        "imageUrl": "saturn.jpg",
+        "definition": "Saturne est célèbre pour ses anneaux spectaculaires et est une planète gazeuse.",
+        "distance": "9.58 ua",
+        "type": "Gazeuse"
+    },
+    {
+        "name": "Uranus",
+        "imageUrl": "uranus.jpg",
+        "definition": "Uranus est une planète gazeuse avec une couleur bleu-vert distinctive.",
+        "distance": "19.18 ua",
+        "type": "Gazeuse"
+    },
+    {
+        "name": "Neptune",
+        "imageUrl": "neptune.jpg",
+        "definition": "Neptune est la huitième et dernière planète du système solaire, également une planète gazeuse.",
+        "distance": "30.07 ua",
+        "type": "Gazeuse"
+    }
+]
