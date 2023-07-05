@@ -7,7 +7,7 @@ const PlanetsCard = ({ onClick }) => {
         <div className={styles['planet-card-container']}>
             {PlanetsData.map((planet) => (
                 <div key={planet.name} className={styles['planet-card']} onClick={onClick}>
-                    <div className={`${styles['planet-card-back']} ${styles['layer']}`}>
+                    <div className={styles['planet-card-back']}>
                         <h2 className={styles['planet-card-title']}>{planet.name}</h2>
                         <p className={styles['planet-card-definition']}>{planet.definition}</p>
                         <p className={styles['planet-card-distance']}>Distance: {planet.distance}</p>
