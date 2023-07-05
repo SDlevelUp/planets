@@ -1,56 +1,56 @@
 [
     {
         "name": "Mercure",
-        "imageUrl": "../assets/planets/mercury.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mercury_in_color_-_Prockter07_centered.jpg/420px-Mercury_in_color_-_Prockter07_centered.jpg",
         "definition": "Mercure est la planète la plus proche du Soleil et la plus petite du système solaire.",
         "distance": "0.39 ua",
         "type": "Rocheuse"
     },
     {
         "name": "Vénus",
-        "imageUrl": "venus.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Venus-real_color.jpg/420px-Venus-real_color.jpg",
         "definition": "Vénus est la deuxième planète du système solaire et est souvent appelée la planère soeur de la Terre.",
         "distance": "0.72 ua",
         "type": "Rocheuse"
     },
     {
         "name": "Terre",
-        "imageUrl": "earth.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/420px-The_Blue_Marble_%28remastered%29.jpg",
         "definition": "La Terre est notre planète, où se trouve la vie telle que nous la connaissons.",
         "distance": "1 ua",
         "type": "Rocheuse"
     },
     {
         "name": "Mars",
-        "imageUrl": "mars.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mars_Valles_Marineris_EDIT.jpg/420px-Mars_Valles_Marineris_EDIT.jpg",
         "definition": "Mars est souvent appelée la planete rouge en raison de sa couleur distinctive.",
         "distance": "1.52 ua",
         "type": "Rocheuse"
     },
     {
         "name": "Jupiter",
-        "imageUrl": "jupiter.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Junopiter.jpg/420px-Junopiter.jpg",
         "definition": "Jupiter est la plus grande planète du système solaire et est une planète gazeuse.",
         "distance": "5.20 ua",
         "type": "Gazeuse"
     },
     {
         "name": "Saturne",
-        "imageUrl": "saturn.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Saturn_during_Equinox.jpg/420px-Saturn_during_Equinox.jpg",
         "definition": "Saturne est célèbre pour ses anneaux spectaculaires et est une planète gazeuse.",
         "distance": "9.58 ua",
         "type": "Gazeuse"
     },
     {
         "name": "Uranus",
-        "imageUrl": "uranus.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Uranus2.jpg/450px-Uranus2.jpg",
         "definition": "Uranus est une planète gazeuse avec une couleur bleu-vert distinctive.",
         "distance": "19.18 ua",
         "type": "Gazeuse"
     },
     {
         "name": "Neptune",
-        "imageUrl": "neptune.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Neptune.jpg",
         "definition": "Neptune est la huitième et dernière planète du système solaire, également une planète gazeuse.",
         "distance": "30.07 ua",
         "type": "Gazeuse"

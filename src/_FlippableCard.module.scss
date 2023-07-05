@@ -1,5 +1,10 @@
 .flippable-card-container {
     display: flex;
-    background-color: #d56161;
+
+    border-radius: 25px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 40px 20px;
 
 }

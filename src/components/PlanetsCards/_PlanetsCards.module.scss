@@ -1,6 +1,6 @@
 .planet-card-container {
     display: flex;
-    background-color: #f7f7f7;
+
     border-radius: 25px;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -9,14 +9,16 @@
 
     & .planet-card-back,
     .planet-card-front {
-        height: 100%;
-        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        width: 340px;
+        height: 340px;
     }
 
     img.planet-card-image {
-        width: 100%;
-        height: auto;
-
+        border-radius: 10px;
         object-fit: cover;
+        width: 340px;
+        height: 340px;
     }
 }
