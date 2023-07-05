@@ -1,14 +1,14 @@
 import Navbar from "../components/Navbar/Navbar";
 import Landing from "../components/Landing/Landing";
 // import Footer from "../components/Footer/Footer";
-import PlanetsCard from "../components/PlanetsCards/PlanetsCards";
+import FlippableCard from "../FlippableCard";
 
 const Home = () => {
     return (
         <div>
             <Navbar />
             <Landing />
-            <PlanetsCard />
+            <FlippableCard />
             {/* <Footer /> */}
         </div>
     )

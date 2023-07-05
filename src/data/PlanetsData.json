@@ -1,7 +1,7 @@
 [
     {
         "name": "Mercure",
-        "imageUrl": "mercury.jpg",
+        "imageUrl": "../assets/planets/mercury.jpg",
         "definition": "Mercure est la planète la plus proche du Soleil et la plus petite du système solaire.",
         "distance": "0.39 ua",
         "type": "Rocheuse"

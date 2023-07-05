@@ -9,7 +9,7 @@ const PlanetsCard = ({ onClick }) => {
                 return (
                     <div key={planet.name} className={styles['planet-card']} onClick={onClick}>
                         <div className={styles['planet-card-back']}>
-                            <img src={planet.imageUrl} alt={planet.name} />
+                            <img src={planet.imageUrl} alt={planet.name} className={styles['planet-card-image']} />
                         </div>
 
                         <div className={styles['planet-card-front']}>
