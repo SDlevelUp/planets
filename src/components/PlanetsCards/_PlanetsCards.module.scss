@@ -2,4 +2,14 @@
     background-color: antiquewhite;
     height: 100%;
     width: 100%;
+
+    .planet-card {
+        background-color: rgb(200, 139, 59);
+        height: 100%;
+        width: 100%;
+
+        border-radius: 5px;
+        border: 5px solid blac;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.8);
+    }
 }
