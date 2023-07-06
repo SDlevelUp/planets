@@ -73,13 +73,11 @@
             }
         }
 
-
         &::after {
             position: absolute;
             display: flex;
             justify-content: center;
             align-items: center;
-
             height: 100%;
             width: 100%;
             top: 0;
@@ -112,14 +110,24 @@
             background: #6569ec;
         }
 
-        &:nth-child(5)::after {
+        &.planet-card-back:nth-child(5)::after {
             content: '';
             background: #ec6565;
         }
 
         &:nth-child(6)::after {
             content: '';
-            background: #65ece7;
+            background: #2d3333;
+        }
+
+        &:nth-child(7)::after {
+            content: '';
+            background: #128682;
+        }
+
+        &:nth-child(8)::after {
+            content: '';
+            background: #30d8d2;
         }
 
         &:hover::after {
@@ -132,24 +140,31 @@
         }
     }
 
-    .cardBx:nth-child(2) {
+    .planet-card:nth-child(2) {
         border: 5px solid #ec8465;
     }
 
-    .cardBx:nth-child(3) {
+    .planet-card:nth-child(3) {
         border: 5px solid #65b4ec;
     }
 
-    .cardBx:nth-child(4) {
+    .planet-card:nth-child(4) {
         border: 5px solid #6569ec;
     }
 
-    .cardBx:nth-child(5) {
+    .planet-card:nth-child(5) {
         border: 5px solid #ec6565;
     }
 
-    .cardBx:nth-child(6) {
+    .planet-card:nth-child(6) {
         border: 5px solid #65ece7;
     }
 
+    .planet-card:nth-child(7) {
+        border: 5px solid #2da01e;
+    }
+
+    .planet-card:nth-child(8) {
+        border: 5px solid #c7539b;
+    }
 }
