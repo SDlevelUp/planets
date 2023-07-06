@@ -3,14 +3,14 @@
         "name": "Mercure",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mercury_in_color_-_Prockter07_centered.jpg/420px-Mercury_in_color_-_Prockter07_centered.jpg",
         "definition": "Mercure est la planète la plus proche du Soleil et la plus petite du système solaire.",
-        "distance": "0.39 ua*",
+        "distance": "0.39 ua* soit 58 343 169.56949 kilomètres",
         "type": "Rocheuse"
     },
     {
         "name": "Venus",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Venus-real_color.jpg/420px-Venus-real_color.jpg",
         "definition": "Venus est la deuxième planète du système solaire et est souvent appelée la planère soeur de la Terre.",
-        "distance": "0.72 ua*",
+        "distance": "0.72 ua* soit 107 710 466.8975 kilomètres",
         "type": "Rocheuse",
         "wikipediaLink": "https://fr.wikipedia.org/wiki/V%C3%A9nus_(plan%C3%A8te)"
     },
@@ -18,42 +18,49 @@
         "name": "Terre",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/420px-The_Blue_Marble_%28remastered%29.jpg",
         "definition": "La Terre est notre planète, où se trouve la vie telle que nous la connaissons.",
-        "distance": "1 ua*",
+        "distance": "1 ua* ou 149 597 870.691 kilomètres",
         "type": "Rocheuse"
     },
     {
         "name": "Mars",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mars_Valles_Marineris_EDIT.jpg/420px-Mars_Valles_Marineris_EDIT.jpg",
         "definition": "Mars est souvent appelée la planete rouge en raison de sa couleur distinctive.",
-        "distance": "1.52 ua*",
+        "distance": "1.52 ua* ou 227 598 000.000 kilomètre",
         "type": "Rocheuse"
     },
     {
         "name": "Jupiter",
         "imageUrl": "data:image/jpeg;base64,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",
         "definition": "Jupiter est la plus grande planète du système solaire et est une planète gazeuse.",
-        "distance": "5.20 ua*",
+        "distance": "5.20 ua* soit 777 908 927.5932 kilomètres",
         "type": "Gazeuse"
     },
     {
         "name": "Saturne",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Saturn_during_Equinox.jpg/420px-Saturn_during_Equinox.jpg",
         "definition": "Saturne est célèbre pour ses anneaux spectaculaires et est une planète gazeuse.",
-        "distance": "9.58 ua*",
+        "distance": "9.58 ua* soit 143 314 7601.22 kilomètres ",
         "type": "Gazeuse"
     },
     {
         "name": "Uranus",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Uranus2.jpg/450px-Uranus2.jpg",
         "definition": "Uranus est une planète gazeuse avec une couleur bleu-vert distinctive.",
-        "distance": "19.18 ua*",
+        "distance": "19.18 ua* soit 286 928 7159.853 kilomètres ",
         "type": "Gazeuse"
     },
     {
         "name": "Neptune",
         "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Neptune.jpg",
         "definition": "Neptune est la huitième et dernière planète du système solaire, également une planète gazeuse.",
-        "distance": "30.07 ua*",
+        "distance": "30.07 ua* soit 449 840 7971.678 kilomètres",
         "type": "Gazeuse"
+    },
+    {
+        "name": "Pluton",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Nh-pluto-in-true-color_2x.jpg/800px-Nh-pluto-in-true-color_2x.jpg",
+        "definition": "Pluton est une planète naine située dans la ceinture de Kuiper.",
+        "distance": "39.48 ua* soit 590 612 3934.881 kilomètres",
+        "type": "Rocheuse"
     }
 ]

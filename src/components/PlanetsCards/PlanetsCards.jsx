@@ -3,8 +3,6 @@ import PlanetsData from '../../data/PlanetsData.json';
 import styles from './_PlanetsCards.module.scss';
 import './_FlipTransition.module.scss';
 import { PiPlanetLight } from 'react-icons/pi';
-import { Link } from "react-router-dom";
-
 
 const PlanetsCard = ({ onClick }) => {
     return (
