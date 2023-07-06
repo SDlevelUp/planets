@@ -16,7 +16,7 @@ const PlanetsCard = ({ onClick }) => {
                         <div className={styles['planet-card-content']}>
                             <h2 className={styles['planet-card-title']}>{planet.name}</h2>
                             <p className={styles['planet-card-definition']}>{planet.definition}</p>
-                            <p className={styles['planet-card-distance']}>Distance: {planet.distance}</p>
+                            <p className={styles['planet-card-distance']}>Distance au soleil : {planet.distance}</p>
                             <p className={styles['planet-card-type']}>
                                 Type:{" "}
                                 {planet.type === 'Rocheuse' || planet.type === 'Gazeuse' ? (
