@@ -13,14 +13,11 @@ const PlanetsCard = ({ onClick }) => {
                         <div className={styles['icon-bx']}>
                             <PiPlanetLight size={32} /> {/* Set the desired size here */}
                         </div>
-                        <div className={styles['planet-card-content']}>
-                            <h2 className={styles['planet-card-title']}>{planet.name}</h2>
-                            <p className={styles['planet-card-definition']}>{planet.definition}</p>
-                            <p className={styles['planet-card-distance']}>Distance: {planet.distance}</p>
-                            <p className={styles['planet-card-type']}>Type: {planet.type}</p>
-                        </div>
+                        <h2 className={styles['planet-card-title']}>{planet.name}</h2>
+                        <p className={styles['planet-card-definition']}>{planet.definition}</p>
+                        <p className={styles['planet-card-distance']}>Distance: {planet.distance}</p>
+                        <p className={styles['planet-card-type']}>Type: {planet.type}</p>
                     </div>
-
                     <div className={styles['planet-card-front']}>
                         <img src={planet.imageUrl} alt={planet.name} className={styles['planet-card-image']} />
                     </div>
