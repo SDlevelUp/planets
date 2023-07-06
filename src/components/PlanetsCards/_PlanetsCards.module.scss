@@ -48,6 +48,10 @@
 
     .planet-card-back {
         transform: rotateY(180deg);
+    }
+
+    .planet-card-back {
+        transform: rotateY(180deg);
         overflow: hidden;
 
         .icon-card {
@@ -55,25 +59,57 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            opacity: 0.2;
+            opacity: 0.10;
         }
 
         .planet-card-content {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
+            .planet-card-title {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                position: relative;
+                top: -1rem;
+                margin-bottom: -0.4rem;
+                font-size: 2.5rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                font-family: 'AndromedaRegular';
 
-            h2 {
-                font-size: 1.2em;
+                
             }
 
-            p {
-                font-size: 11px;
+            .planet-card-definition {
+                width: 95%;
+                margin: 0 auto;
+                font-weight: 600;
+                font-size: 1.063rem;
+            }
+
+            .planet-card-distance {
+                position: relative;
+                top: 1rem;
+                left: 3%;
+                font-weight: 600;
+                font-size: 1.063rem;
+            }
+
+
+            .planet-card-type {
+                position: relative;
+                top: 2.5rem;
+                left: 3%;
+                font-weight: 600;
+                font-size: 1.063rem;
+                color: black;
+
+                span {
+                    font-style: italic;
+                    font-weight: 600;
+                    color: #518bbb;
+                }
             }
         }
+
 
         &::after {
             position: absolute;
@@ -87,12 +123,17 @@
             z-index: 100;
             font-size: 4em;
             color: #fff;
-            background-image: linear-gradient(to top right, transparent 0%, rgba(236, 189, 101, 0.8) 100%);
+            background-image: linear-gradient(to top right, transparent 0%, rgba(177, 189, 196, 0.8) 100%);
 
             box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
             content: '';
         }
 
-
+        .planet-card-asterix {
+            position: absolute;
+            top: 86%;
+            left: 3%;
+            font-size: 0.625rem;
+        }
     }
 }
