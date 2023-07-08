@@ -3,12 +3,9 @@
     border-radius: 25px;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 45px;
+    gap: 35px;
     padding: 40px 20px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    max-width: 1250px;
-    margin: 80px auto;
+
 }
 
 .planet-card {
@@ -69,38 +66,35 @@
                 justify-content: center;
                 position: relative;
                 top: -1rem;
-                margin-bottom: -0.4rem;
+                margin-bottom: -0.8rem;
                 color: rgb(86, 150, 223);
                 font-size: 2.5rem;
                 font-weight: 800;
                 text-transform: uppercase;
                 font-family: 'AndromedaRegular';
-
-
             }
 
             .planet-card-definition {
                 width: 95%;
                 margin: 0 auto;
                 font-weight: 600;
-                font-size: 1.063rem;
+                font-size: 1rem;
             }
 
             .planet-card-distance {
                 position: relative;
-                top: 1rem;
+                top: 0;
                 left: 3%;
                 font-weight: 600;
-                font-size: 1.063rem;
+                font-size: 1rem;
             }
-
 
             .planet-card-type {
                 position: relative;
-                top: 2.5rem;
+                top: -0.75rem;
                 left: 3%;
                 font-weight: 600;
-                font-size: 1.063rem;
+                font-size: 1rem;
                 color: black;
 
                 span {
@@ -108,6 +102,14 @@
                     font-weight: 600;
                     color: #518bbb;
                 }
+            }
+
+            .planet-card-asterix {
+                position: absolute;
+                top: 83%;
+                left: 3%;
+                width: 95%;
+                font-size: 0.625rem;
             }
         }
 
@@ -130,11 +132,24 @@
             content: '';
         }
 
-        .planet-card-asterix {
-            position: absolute;
-            top: 86%;
-            left: 3%;
-            font-size: 0.625rem;
-        }
+
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+    .planet-card {
+        width: 100%;
+        height: 270px;
+    }
+
+    img.planet-card-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .planet-card-front {
+        width: 100%;
+        height: 100%;
     }
 }

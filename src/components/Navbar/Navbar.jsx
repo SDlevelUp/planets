@@ -42,7 +42,6 @@ const Navbar = () => {
                 <li>
                     <Link to="/contact">Contact</Link>
                 </li>
-
             </ul>
             <div className={styles.hamburger} onClick={handleClick}>
                 {click ? <FaTimes size={20} /> : <FaBars size={20} />}

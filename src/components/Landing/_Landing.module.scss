@@ -73,8 +73,6 @@
                     background: $background;
                     z-index: -1;
                     @include button-transition;
-
-
                 }
 
                 &:hover::before {
