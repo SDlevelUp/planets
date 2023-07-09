@@ -6,6 +6,10 @@
     #{$prop}: #{$value};
 }
 
+@mixin font-family {
+    @include prefixing(font-family, 'AndromedaRegular');
+}
+
 @mixin prefixing-values($prop, $value) {
     #{$prop}: -webkit-#{$value};
     #{$prop}: -moz-#{$value};
@@ -113,3 +117,4 @@
         @include prefixing(transition, $prop #{$time}s linear #{$delaying}s);
     }
 }
+
