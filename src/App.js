@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './routes/Home';
 import PlanetsCard from './components/PlanetsCards/PlanetsCards';
-
+import Footer from './components/Footer/Footer';
 function App() {
     return (
         <>
@@ -9,6 +9,7 @@ function App() {
                 <Route path='/' element={<Home />} />
                 <Route path='/planets' element={<PlanetsCard />} />
             </Routes>
+            <Footer />
         </>
     );
 }

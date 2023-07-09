@@ -47,6 +47,17 @@
     @include prefixing(flex-direction, column);
 }
 
+@mixin flex-justify-row {
+    @include prefixing(display, flex);
+    @include prefixing(text-align, center);
+    @include prefixing(justify-content, center);
+}
+
+@mixin width-height {
+    @include prefixing(height, 100%);
+    @include prefixing(width, 100%);
+}
+
 @mixin hero-img {
     position: absolute;
     top: 50%;
@@ -117,4 +128,3 @@
         @include prefixing(transition, $prop #{$time}s linear #{$delaying}s);
     }
 }
-

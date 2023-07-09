@@ -1,8 +1,47 @@
-.footer {
-    background-color: aliceblue;
-    height: 100%;
-    width: 100%;
+@import '../../scss/utils/mixins';
+@import '../../scss/utils/_colors';
+@import '../../scss/utils/_variables';
 
-    z-index: 99999;
+.footer {
+    background-color: $light-mole;
+    width: 100%;
+    padding: 6rem 0;
+
+
+    .footer-container {
+        max-width: 1140px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+
+    .left-part {
+        height: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .location {
+        display: flex;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
