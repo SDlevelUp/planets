@@ -7,7 +7,7 @@ function App() {
         <>
             <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/planets' element={<PlanetsCard />} />
+                <Route path='/' element={<PlanetsCard />} />
             </Routes>
             <Footer />
         </>

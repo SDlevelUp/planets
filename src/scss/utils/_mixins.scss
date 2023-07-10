@@ -53,6 +53,11 @@
     @include prefixing(justify-content, center);
 }
 
+@mixin grid-columns($columns-number) {
+    display: grid;
+    grid-template-columns: repeat($columns-number, 1fr);
+}
+
 @mixin width-height {
     @include prefixing(height, 100%);
     @include prefixing(width, 100%);

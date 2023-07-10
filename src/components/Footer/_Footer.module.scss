@@ -3,20 +3,40 @@
 @import '../../scss/utils/_variables';
 
 .footer {
-    background-color: $light-mole;
+    background-color: $black;
+    color: $white;
     width: 100%;
     padding: 6rem 0;
+    z-index: 99999;
 
-
-    .footer-container {
+    .container {
         max-width: 1140px;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 40px;
+        gap: 5rem;
+
+        @include breakpoint(tablet) {
+            width: 90%;
+            grid-template-columns: 1fr;
+        }
     }
 
-    .left-part {
+    .icon {
+        margin-right: 1rem;
+    }
+
+    .social-media-icon {
+        margin-right: 1.5rem;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+
+    .left-part,
+    .right-part {
         height: 100%;
         max-width: 100%;
         display: flex;
@@ -24,24 +44,15 @@
         padding: 1rem;
     }
 
-    .location {
-        display: flex;
-        align-items: center;
+    .left-part {
+        .location {
+            display: flex;
+            align-items: center;
+        }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    h4,
+    p {
+        padding-top: 0;
+    }
 }
