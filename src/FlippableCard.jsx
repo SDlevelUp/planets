@@ -4,6 +4,7 @@ import PlanetsCard from './components/PlanetsCards/PlanetsCards';
 import { CSSTransition } from 'react-transition-group';
 import flipTransitionStyles from './_FlippableCard.module.scss';
 
+
 const FlippableCard = () => {
     const [showFront, setShowFront] = useState(true);
     return (

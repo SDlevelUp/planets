@@ -2,137 +2,144 @@
 @import '../../scss/utils/_mixins.scss';
 @import '../../scss/utils/_colors.scss';
 
+.planet-card-presentation {
+    color: $white;
+}
+
 .planet-card-container {
     display: flex;
-    border-radius: 25px;
+    border-radius: 0.5rem;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 35px;
-    padding: 40px 20px;
+    padding: 2.5rem 5rem;
+    padding-top: 8rem;
 
-}
 
-.planet-card {
-    position: relative;
-    width: 340px;
-    height: 340px;
-    border-radius: 10px;
-    border: 5px solid white;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
-    transform-style: preserve-3d;
-    transition: transform 1000ms;
-    perspective: 1000px;
-    cursor: pointer;
+    .planet-card {
+        position: relative;
+        width: 340px;
+        height: 380px;
+        border-radius: 0.5rem;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+        transform-style: preserve-3d;
+        transition: transform 1000ms;
+        perspective: 1000px;
+        cursor: pointer;
 
-    &:hover {
-        transform: rotateY(180deg);
-    }
-
-    img.planet-card-image {
-        border-radius: 10px;
-        object-fit: cover;
-        @include width-height;
-    }
-
-    .planet-card-back,
-    .planet-card-front {
-        position: absolute;
-        top: 0;
-        left: 0;
-        @include width-height;
-        border-radius: 10px;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-    }
-
-    .planet-card-back {
-        transform: rotateY(180deg);
-    }
-
-    .planet-card-back {
-        transform: rotateY(180deg);
-        overflow: hidden;
-
-        .icon-card {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 0.10;
+        &:hover {
+            transform: rotateY(180deg);
         }
 
-        .planet-card-content {
-            .planet-card-title {
-                @include flex-justify-row;
-                position: relative;
-                top: -1rem;
-                margin-bottom: -0.8rem;
-                color: rgb(86, 150, 223);
-                font-size: 2.5rem;
-                font-weight: 800;
-                text-transform: uppercase;
-                font-family: $font-family;
+        img.planet-card-image {
+            border-radius: 0.5rem;
+            object-fit: cover;
+            @include width-height;
+        }
+
+        .planet-card-back,
+        .planet-card-front {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include width-height;
+            border-radius: 0.5rem;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .planet-card-back {
+            transform: rotateY(180deg);
+        }
+
+        .planet-card-back {
+            transform: rotateY(180deg);
+            overflow: hidden;
+
+            .icon-card {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0.10;
             }
 
-            .planet-card-definition {
-                width: 95%;
-                margin: 0 auto;
-                font-weight: 600;
-                font-size: 1rem;
-            }
+            .planet-card-content {
+                .planet-card-title {
+                    @include flex-justify-row;
+                    position: relative;
+                    top: -1rem;
+                    margin-bottom: -0.8rem;
+                    color: $white;
+                    font-size: 2.5rem;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    font-family: $font-family;
+                }
 
-            .planet-card-distance {
-                position: relative;
-                top: 0;
-                left: 3%;
-                font-weight: 600;
-                font-size: 1rem;
-            }
-
-            .planet-card-type {
-                position: relative;
-                top: 0.1rem;
-                left: 3%;
-                font-weight: 600;
-                font-size: 1rem;
-                color: black;
-
-                span {
-                    font-style: italic;
+                .planet-card-definition {
+                    width: 95%;
+                    color: $white;
+                    margin: 0 auto;
                     font-weight: 600;
-                    color: #518bbb;
+                    font-size: 1rem;
+                }
+
+                .planet-card-distance {
+                    position: relative;
+                    color: $white;
+                    top: 0;
+                    left: 3%;
+                    font-weight: 600;
+                    font-size: 1rem;
+                }
+
+                .planet-card-type {
+                    color: $white;
+                    position: relative;
+                    top: 0.1rem;
+                    left: 3%;
+                    font-weight: 600;
+                    font-size: 1rem;
+
+                    span {
+                        font-style: italic;
+                        font-weight: 600;
+                        color: #77bcd1;
+                    }
+                }
+
+                .planet-card-asterix {
+                    position: absolute;
+                    top: 83%;
+                    left: 3%;
+                    width: 95%;
+                    font-size: 0.625rem;
+                    color: $white;
                 }
             }
 
-            .planet-card-asterix {
+            &::after {
+                content: '';
                 position: absolute;
-                top: 83%;
-                left: 3%;
-                width: 95%;
-                font-size: 0.625rem;
+                @include flex-center-row;
+                @include width-height;
+                top: 0;
+                right: 0;
+                z-index: 100;
+                font-size: 4em;
+                color: #fff;
+                background-image: $liear-gradient-card;
+                box-shadow: $box-shadow2;
             }
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            @include flex-center-row;
-            @include width-height;
-            top: 0;
-            right: 0;
-            z-index: 100;
-            font-size: 4em;
-            color: #fff;
-            background-image: $liear-gradient-card;
-            box-shadow: $box-shadow2;
         }
     }
 }
 
 @include breakpoint(mobile) {
     .planet-card {
-        width: 100%;
-        height: 300px;
+        width: 340px;
+        height: 380px;
     }
 
     img.planet-card-image {

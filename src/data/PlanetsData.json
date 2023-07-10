@@ -8,7 +8,7 @@
     },
     {
         "name": "Venus",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Venus-real_color.jpg/420px-Venus-real_color.jpg",
+        "imageUrl": "https://img.20mn.fr/12vNGyf1Tl-MvkfDBTesCw/640x410_couche-nuageuse-planete-venus-vue-sonde-japonaise-akatsuki",
         "definition": "Venus est la deuxième planète du système solaire et est souvent appelée la planère soeur de la Terre.",
         "distance": "0.72 ua*, soit 107 710 466.8975 kilomètres",
         "type": "Rocheuse",
@@ -16,14 +16,14 @@
     },
     {
         "name": "La Terre",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/The_Blue_Marble_%28remastered%29.jpg/420px-The_Blue_Marble_%28remastered%29.jpg",
+        "imageUrl": "https://static.nationalgeographic.fr/files/styles/image_3200/public/earth-planet.adapt_.945.1.jpg?w=400&h=400&q=75",
         "definition": "La Terre est notre planète, où se trouve la vie telle que nous la connaissons.",
         "distance": "1 ua*, soit 149 597 870.691 kilomètres",
         "type": "Rocheuse"
     },
     {
         "name": "Mars",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mars_Valles_Marineris_EDIT.jpg/420px-Mars_Valles_Marineris_EDIT.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/220px-OSIRIS_Mars_true_color.jpg",
         "definition": "Mars est souvent appelée la planete rouge en raison de sa couleur distinctive.",
         "distance": "1.52 ua*, soit 227 598 000.000 kilomètre",
         "type": "Rocheuse"
@@ -51,14 +51,14 @@
     },
     {
         "name": "Neptune",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Neptune.jpg",
+        "imageUrl": "https://i.natgeofe.com/k/6de484fb-f91d-4df9-8d71-b391726496ca/neptune-planet.jpg",
         "definition": "Neptune est la huitième et dernière planète du système solaire, également une planète gazeuse.",
         "distance": "30.07 ua*, soit 449 840 7971.678 kilomètres",
         "type": "Gazeuse"
     },
     {
         "name": "Pluton",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Nh-pluto-in-true-color_2x.jpg/800px-Nh-pluto-in-true-color_2x.jpg",
+        "imageUrl": "https://cdn.pixabay.com/photo/2021/09/03/06/33/pluto-6595130_1280.jpg",
         "definition": "Pluton est une planète naine située dans la ceinture de Kuiper.",
         "distance": "39.48 ua*, soit 590 612 3934.881 kilomètres",
         "type": "Rocheuse"
