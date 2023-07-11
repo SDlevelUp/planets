@@ -13,10 +13,12 @@ const PlanetsCard = ({ onClick }) => {
             </div>
             <div className={styles['planet-card-presentation']}>
                 <h1>Presentation de la galerie</h1>
-                <p>Dans cette partie, vous trouverez les planètes que vous connaissez:
-                    Mars, Vénus, Mercure, ... et celle où nous vivons ( La Terre ) sous forme de cartes,
-                    qui au passage de la souris s'animeront de sorte que vous puissiez
-                    avoir accès aux informations utiles pour chaque planète. Essayez, et vous verrez ! </p>
+                <p>Dans cette partie, vous trouverez les planètes que vous connaissez :
+                    Mars, Vénus, Mercure, ... et celle où nous vivons ( La Terre ) sous
+                    forme de cartes, qui au passage de la souris s'animeront de sorte que vous
+                    puissiez avoir accès aux informations utiles pour chaque planète.
+                    Essayez, et vous verrez !
+                </p>
             </div>
             <div className={styles['planet-card-container']}>
                 {PlanetsData.map((planet) => (
