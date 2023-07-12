@@ -1,10 +1,11 @@
 import React from 'react';
-import './Contact.css'
+import styles from './_Contact.module.scss';
+
 import galaxy from '../../assets/galaxynight.jpg';
 const Contact = () => {
     return (
-        <div className='form'>
-            <img src={galaxy} alt="Galaxy night" className='bgform'/>
+        <div className={styles["form"]}>
+            <img src={galaxy} alt="Galaxy night" className={styles["bgform"]} />
             <form>
                 <h2>Contactez-nous</h2>
                 <label>Votre nom</label>
@@ -15,7 +16,7 @@ const Contact = () => {
                 <input type='text'></input>
                 <label>Message</label>
                 <textarea rows='6' placeholder='Votre message ici...' />
-                <button className='btn'>Envoyer 🚀 </button>
+                <button className={styles["btn"]}>Envoyer 🚀 </button>
             </form>
         </div>
     )

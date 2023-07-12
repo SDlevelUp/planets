@@ -1,5 +1,5 @@
 import styles from './_Footer.module.scss';
-import { FaMapMarked, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaSearchLocation, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
 import { BsTelephoneFill } from 'react-icons/bs';
 
@@ -9,17 +9,23 @@ const Footer = () => {
             <div className={styles["container"]}>
                 <div className={styles["left-part"]}>
                     <div className={styles["location"]}>
-                        <FaMapMarked size={20} className={styles["icon"]} />
+                        <FaSearchLocation size={20} className={styles["icon"]} />
                         <div>
-                            <p>13 Avenue de Paris, 75008 Paris</p>
-
+                            <p>13 Avenue de Paris</p>
+                            <h4>75008 Paris</h4>
                         </div>
                     </div>
                     <div>
-                        <h4> <BsTelephoneFill size={20} className={styles["icon"]} />+33 1 23 45 67 89</h4>
+                        <h4>
+                            <BsTelephoneFill size={20} className={styles["icon"]} />
+                            +33 1 23 45 67 89
+                        </h4>
                     </div>
                     <div>
-                        <h4><IoMdMail size={20} className={styles["icon"]} /> galaxyexplorer@galaxy.com</h4>
+                        <h4>
+                            <IoMdMail size={20} className={styles["icon"]} />
+                            galaxyexplorer@galaxy.com
+                        </h4>
                     </div>
                 </div>
                 <div className={styles["right-part"]}>
