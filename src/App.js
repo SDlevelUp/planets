@@ -12,7 +12,7 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/gallery' element={<FlippableCard />} />
+                <Route path='/galerie' element={<FlippableCard />} />
 
                 <Route path='/contact' element={<Contact />} />
             </Routes>
