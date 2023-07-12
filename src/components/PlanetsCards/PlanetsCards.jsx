@@ -2,7 +2,6 @@ import React from 'react';
 import PlanetsData from '../../data/PlanetsData.json';
 import styles from './_PlanetsCards.module.scss';
 import './_FlipTransition.module.scss';
-import { PiPlanetLight } from 'react-icons/pi';
 import gallery from '../../assets/galleryban.jpg';
 
 const PlanetsCard = ({ onClick }) => {
@@ -24,9 +23,6 @@ const PlanetsCard = ({ onClick }) => {
                 {PlanetsData.map((planet) => (
                     <div key={planet.name} className={styles['planet-card']} onClick={onClick}>
                         <div className={styles['planet-card-back']}>
-                            <div className={styles['icon-card']}>
-                                <PiPlanetLight size={80} />
-                            </div>
                             <div className={styles['planet-card-content']}>
                                 <h2 className={styles['planet-card-title']}>{planet.name}</h2>
                                 <p className={styles['planet-card-definition']}>{planet.definition}</p>
