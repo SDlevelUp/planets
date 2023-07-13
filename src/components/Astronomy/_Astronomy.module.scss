@@ -1,0 +1,17 @@
+@import '../../scss/utils/_variables.scss';
+@import '../../scss/utils/_mixins.scss';
+@import '../../scss/utils/_colors.scss';
+@import '../../scss/utils/_animations.scss';
+
+.astronomy-banner img {
+    max-width: 100%;
+    max-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+}
+
+.astronomy-container {
+    background-color: beige;
+    height: 100vh;
+}

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import styles from './_FlippableCard.module.scss';
-import PlanetsCard from './components/PlanetsCards/PlanetsCards';
+import { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
+import PlanetsCard from './components/PlanetsCards/PlanetsCards';
 import flipTransitionStyles from './_FlippableCard.module.scss';
 
+import styles from './_FlippableCard.module.scss';
 
 const FlippableCard = () => {
     const [showFront, setShowFront] = useState(true);

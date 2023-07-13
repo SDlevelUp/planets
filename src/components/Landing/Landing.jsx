@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './_Landing.module.scss';
 import galaxy from '../../assets/galaxynight.jpg';
 import Buttons from './Buttons';

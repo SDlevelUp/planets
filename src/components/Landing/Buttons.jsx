@@ -1,6 +1,5 @@
-import React from 'react';
-import styles from "./_Landing.module.scss";
 import { useNavigate } from 'react-router-dom';
+import styles from "./_Landing.module.scss";
 
 const Buttons = () => {
     const navigate = useNavigate();

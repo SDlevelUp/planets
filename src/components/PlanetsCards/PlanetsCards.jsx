@@ -2,7 +2,7 @@ import React from 'react';
 import PlanetsData from '../../data/PlanetsData.json';
 import styles from './_PlanetsCards.module.scss';
 import './_FlipTransition.module.scss';
-import gallery from '../../assets/galleryban.jpg';
+import astronaut from '../../assets/astronaut.jpg';
 
 const PlanetCard = ({ planet, onClick }) => {
     return (
@@ -40,12 +40,12 @@ const PlanetsCard = ({ onClick }) => {
     return (
         <>
             <div className={styles['gallery-banner']}>
-                <img src={gallery} alt="bannière galerie" />
+                <img src={astronaut} alt="bannière galerie" />
             </div>
             <div className={styles['planet-card-presentation']}>
                 <h1>Presentation de la galerie</h1>
                 <p className={styles['p-presentation']}>
-                    Bienvenue dans l'aventure, jeune explorateur ! 
+                    Bienvenue dans l'aventure, jeune explorateur !
                 </p>
                 <p>
                     Dans cette partie, tu découvriras ou redécouvriras
@@ -55,7 +55,7 @@ const PlanetsCard = ({ onClick }) => {
                     sous forme de cartes. Au passage de la souris, elles
                     s'animeront afin que tu puisses accéder aux informations
                     utiles pour chaque planète.
-                    Essaies, et tu verras ! 👩‍🚀 
+                    Essaies, et tu verras ! 👩‍🚀
                 </p>
 
             </div>
