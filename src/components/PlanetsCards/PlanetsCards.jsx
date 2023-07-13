@@ -43,7 +43,7 @@ const PlanetsCard = ({ onClick }) => {
                 <img src={astronaut} alt="bannière galerie" />
             </div>
             <div className={styles['planet-card-presentation']}>
-                <h1>Presentation de la galerie</h1>
+                <h1>PlanetaryPix</h1>
                 <p className={styles['p-presentation']}>
                     Bienvenue dans l'aventure, jeune explorateur !
                 </p>

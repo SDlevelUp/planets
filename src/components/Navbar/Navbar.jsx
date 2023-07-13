@@ -3,11 +3,16 @@ import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import styles from './_Navbar.module.scss';
 
+import MenuItems from '../MenuItems';
+import { menuItems } from '../../data/menuItems';
+
 const Navbar = () => {
-    const [click, setClick] = useState(false);
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
-    const handleClick = () => setClick(!click);
+    const handleMobileMenuClick = () => {
+        setMobileMenuOpen(!isMobileMenuOpen);
+    };
 
     const handleScroll = () => {
         if (window.scrollY > 0) {
@@ -25,26 +30,17 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className={`${styles.header} ${scrolled ? styles['header-bg'] : ''}`}>
+        <div className={`${styles.header} ${isMobileMenuOpen ? styles.active : ''} ${scrolled ? styles['header-bg'] : ''}`}>
             <Link to="/" className={styles.logo}>
                 GALAXIE
             </Link>
-            <ul className={`${styles['nav-menu']} ${click ? styles.active : ''}`}>
-                <li>
-                    <Link to="/">Accueil</Link>
-                </li>
-                <li>
-                    <Link to="/galerie">Galerie</Link>
-                </li>
-                <li>
-                    <Link to="/astronomie">Astronomie</Link>
-                </li>
-                <li>
-                    <Link to="/contact">Contact</Link>
-                </li>
+            <ul className={`${styles['nav-menu']} ${isMobileMenuOpen ? styles.active : ''}`}>
+                {menuItems.map((menu, index) => (
+                    <MenuItems items={menu} key={index} />
+                ))}
             </ul>
-            <div className={styles.hamburger} onClick={handleClick}>
-                {click ? <FaTimes size={20} /> : <FaBars size={20} />}
+            <div className={styles.hamburger} onClick={handleMobileMenuClick}>
+                {isMobileMenuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
             </div>
         </div>
     );

@@ -12,7 +12,7 @@ function App() {
         <>
             <Navbar />
             <Routes>
-                <Route path='/' element={<Home />} />
+                <Route path='/' element={<Home />} exact />
                 <Route path='/galerie' element={<FlippableCard />} />
                 <Route path='/astronomie' element={<Astronomy />} />
                 <Route path='/contact' element={<Contact />} />
