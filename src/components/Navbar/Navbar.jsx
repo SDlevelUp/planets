@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import styles from './_Navbar.module.scss';
 
 import MenuItems from '../MenuItems';
-import { menuItems } from '../../data/menuItems';
+import { menuItems } from '../../menuItems';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
