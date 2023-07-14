@@ -5,8 +5,8 @@ export const menuItems = [
         path: "/galerie",
         submenu: [
             { title: "PlanetaryPix", path: "/galerie" },
-            { title: "Sous-menu 2", path: "/galerie/sous-menu-2" },
-            { title: "Sous-menu 3", path: "/galerie/sous-menu-3" },
+            { title: "Systeme solaire", path: "/galerie/systemesolaire" },
+            { title: "Quiz", path: "/galerie/quiz" },
         ],
     },
     { title: "Astronomie", path: "/astronomie" },
