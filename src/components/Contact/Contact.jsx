@@ -8,7 +8,7 @@ const Contact = () => {
             <img src={galaxy} alt="Galaxy night" className={styles["bgform"]} />
             <form>
                 <h2>Contactez-nous</h2>
-                <label>Votre nom</label>
+                <label>Nom</label>
                 <input type='text'></input>
                 <label>Email</label>
                 <input type='email'></input>
