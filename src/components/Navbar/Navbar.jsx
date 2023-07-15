@@ -1,24 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes, FaChevronDown } from 'react-icons/fa';
+import Chevron from '../Chevron';
+import SubMenu from '../SubMenu';
 import styles from './_Navbar.module.scss';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { menuItems } from '../../menuItems';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-    const [openSubmenu, setOpenSubmenu] = useState(null);
+    const [activeSubmenuIndex, setActiveSubmenuIndex] = useState(null);
 
     const handleMobileMenuClick = () => {
         setMobileMenuOpen(!isMobileMenuOpen);
     };
 
     const handleScroll = () => {
-        if (window.scrollY > 0) {
-            setScrolled(true);
-        } else {
-            setScrolled(false);
-        }
+        setScrolled(window.scrollY > 0);
     };
 
     useEffect(() => {
@@ -28,15 +26,8 @@ const Navbar = () => {
         };
     }, []);
 
-    const handleDropdown = (index) => {
-        setMobileMenuOpen(false);
-    };
     const handleSubmenuClick = (index) => {
-        if (openSubmenu === index) {
-            setOpenSubmenu(null);
-        } else {
-            setOpenSubmenu(index);
-        }
+        setActiveSubmenuIndex((prevIndex) => (prevIndex === index ? null : index));
     };
 
     return (
@@ -46,24 +37,19 @@ const Navbar = () => {
             </Link>
             <ul className={`${styles['nav-menu']} ${isMobileMenuOpen ? styles.active : ''}`}>
                 {menuItems.map((menu, index) => (
-                    <li
-                        className={`${styles['menu-item']} ${openSubmenu === index ? styles.active : ''}`}
-                        key={index}
-                    >
+                    <li className={`${styles['menu-item']}`} key={index}>
                         {menu.submenu ? (
-                            <div className={styles['menu-link']} onClick={() => handleSubmenuClick(index)}>
+                            <div
+                                className={`${styles['menu-link']} ${activeSubmenuIndex === index ? styles['active'] : ''}`}
+                                onClick={() => handleSubmenuClick(index)}
+                            >
                                 {menu.title}
-                                <FaChevronDown className={styles['menu-icon']} />
-                                {openSubmenu === index && (
-                                    <ul className={styles['sub-menu']}>
-                                        {menu.submenu.map((submenu, subIndex) => (
-                                            <li key={subIndex}>
-                                                <Link to={submenu.path} className={styles['sub-menu-link']}>
-                                                    {submenu.title}
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
+                                <Chevron
+                                    isActive={activeSubmenuIndex === index}
+                                    onClick={() => handleSubmenuClick(index)}
+                                />
+                                {activeSubmenuIndex === index && (
+                                    <SubMenu isOpen={true} submenuItems={menu.submenu} />
                                 )}
                             </div>
                         ) : (
@@ -82,3 +68,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

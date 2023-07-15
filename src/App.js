@@ -5,12 +5,11 @@ import FlippableCard from './FlippableCard';
 import Footer from './components/Footer/Footer';
 import Astronomy from './components/Astronomy/Astronomy';
 import Contact from './components/Contact/Contact';
-
-
+import { menuItems } from './menuItems';
 function App() {
     return (
         <>
-            <Navbar />
+            <Navbar menuItems={menuItems} />
             <Routes>
                 <Route path='/' element={<Home />} exact />
                 <Route path='/galerie' element={<FlippableCard />} />

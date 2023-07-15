@@ -7,7 +7,7 @@ const Astronomy = () => {
                 <img src={mars} alt="bannière galerie" />
             </div>
             <div className={styles['astronomy-presentation']}>
-                <h1>Astronium</h1>
+                <h1>L'Astronium</h1>
                 {/* <p className={styles['p-presentation-solar-system']}>
                     Explorez les mystères fascinants de notre système solaire à travers notre
                     section dédiée à l'astronomie planétaire. Plongez-vous dans l'univers des

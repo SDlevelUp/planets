@@ -2,7 +2,7 @@ export const menuItems = [
     { title: "Accueil", path: "/" },
     {
         title: "Galerie",
-        path: "/",
+        path: "/galerie",
         submenu: [
             { title: "Planetarypix", path: "/galerie" },
             { title: "Quiz", path: "/galerie/quiz" },
@@ -12,7 +12,7 @@ export const menuItems = [
         title: "Astronomie",
         path: "/",
         submenu: [
-            { title: "Astronomie", path: "/astronomie" },
+            { title: "L'Astronium", path: "/astronomie" },
             { title: "Systeme solaire", path: "/astronomie/systemesolaire" },
         ],
     },
