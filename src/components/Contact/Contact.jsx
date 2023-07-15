@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from './_Contact.module.scss';
 
-import galaxy from '../../assets/galaxynight.jpg';
+import ast from '../../assets/ast.jpg';
 const Contact = () => {
     return (
         <div className={styles["form"]}>
-            <img src={galaxy} alt="Galaxy night" className={styles["bgform"]} />
+            <div className={styles['contact-banner']}>
+                <img src={ast} alt="Contact banniere" />
+            </div>
             <form>
                 <h2>Contactez-nous</h2>
                 <label>Nom</label>
