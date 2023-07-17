@@ -34,10 +34,10 @@
         margin-bottom: 1.5rem;
 
         img {
-            max-width: 20rem;
-            border: 3px solid red;
+            max-width: 15rem;
+            border: 3px solid $white;
             border-radius: 0.9rem;
-            margin-right: 1.5rem;
+            margin-right: 2rem;
             opacity: 0;
             transform: translateY(40px);
             transition: opacity 0.5s, transform 0.5s;

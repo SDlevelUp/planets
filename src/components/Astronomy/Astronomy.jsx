@@ -32,31 +32,32 @@ const Astronomy = () => {
                 <div className={`${styles['img-left']} ${animateImages ? styles['animate'] : ''}`}>
                     <img src={travel} alt="Astronaute dans l'espace" />
                     <p className={styles['p-presentation-solar-system']}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero veniam accusantium nam repudiandae
-                        laboriosam quia suscipit, voluptates totam, atque, numquam quae exercitationem a aperiam libero
-                        similique quaerat? Explicabo, autem quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Vero veniam accusantium nam repudiandae laboriosam quia suscipit, voluptates totam, atque, numquam quae
-                        exercitationem a aperiam libero similique quaerat? Explicabo, autem quas.
+                        Plongez au cœur des planètes, des lunes, des astéroïdes et des comètes qui composent
+                        notre système solaire. Explorez les caractéristiques uniques de chaque planète, de Mercure
+                        à Neptune, et découvrez des faits fascinants sur leur taille, leur composition et leurs
+                        atmosphères. Apprenez également sur les lunes les plus intrigantes, comme la lune de Jupiter,
+                        Europe, et la lune de Saturne, Titan. Plongez dans l'immensité du système solaire et laissez-vous
+                        émerveiller par sa beauté et sa complexité.
                     </p>
                 </div>
                 <div className={`${styles['img-right']} ${animateImages ? styles['animate'] : ''}`}>
                     <img src={travel} alt="Astronaute dans l'espace" />
                     <p className={styles['p-presentation-quiz']}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero veniam accusantium nam repudiandae
-                        laboriosam quia suscipit, voluptates totam, atque, numquam quae exercitationem a aperiam libero
-                        similique quaerat? Explicabo, autem quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Vero veniam accusantium nam repudiandae laboriosam quia suscipit, voluptates totam, atque, numquam quae
-                        exercitationem a aperiam libero similique quaerat? Explicabo, autem quas.
+                        Mettez vos connaissances à l'épreuve et explorez l'univers à travers une série de questions captivantes.
+                        Améliorez votre compréhension des planètes, des étoiles et des phénomènes célestes. Obtenez des résultats
+                        instantanés et découvrez votre niveau de connaissances en astronomie. Plongez dans le monde fascinant de
+                        l'astronomie avec le quiz interactif de la page "Astronomie". Amusez-vous et profitez de cette expérience éducative !
                     </p>
                 </div>
                 <div className={`${styles['img-left']} ${animateImages ? styles['animate'] : ''}`}>
                     <img src={travel} alt="Astronaute dans l'espace" />
                     <p className={styles['p-presentation-exploration']}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero veniam accusantium nam repudiandae
-                        laboriosam quia suscipit, voluptates totam, atque, numquam quae exercitationem a aperiam libero
-                        similique quaerat? Explicabo, autem quas. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Vero veniam accusantium nam repudiandae laboriosam quia suscipit, voluptates totam, atque, numquam quae
-                        exercitationem a aperiam libero similique quaerat? Explicabo, autem quas.
+                        La partie "Exploration" vous offre une expérience immersive à travers une sélection captivante de vidéos sur l'exploration spatiale.
+                        Plongez dans les missions historiques et actuelles qui ont permis à l'humanité de repousser les frontières de l'espace. Regardez des
+                        vidéos époustouflantes des premiers pas de l'homme sur la Lune lors de la mission Apollo, revivez les moments forts des missions de
+                        la navette spatiale, et découvrez les incroyables découvertes réalisées par les sondes spatiales qui ont exploré des planètes lointaines
+                        et des comètes. Préparez-vous à être émerveillé par les images et les témoignages des astronautes qui ont vécu ces moments historiques
+                        et laissez-vous inspirer par les avancées et les découvertes de l'exploration spatiale.
                     </p>
                 </div>
             </section>
