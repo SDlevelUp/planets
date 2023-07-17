@@ -81,11 +81,12 @@
 
                 &:hover {
                     background-color: darken($darkgrey, 5%);
+                    color: $black;
                 }
             }
 
             .btn-bg {
-                background-color: $background-grey;
+                background-color: $background-lightbrown;
             }
         }
     }

@@ -19,20 +19,54 @@
 }
 
 .astronomy-presentation {
-    background-color: $black;
-    height: calc(100vh - 80vh);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 9rem auto;
+    width: 70%;
 
+    h1 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 
-    // .p-presentation-planet {
-    //     color: $white;
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
+    div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
 
-    // }
+        img {
+            max-width: 20rem;
+            border: 3px solid $white;
+            border-radius: 0.9rem;
+            margin-right: 1.5rem;
+        }
+
+        p {
+            margin: 0;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            cursor: pointer;
+        }
+
+        &.img-left {
+            p {
+                order: 2;
+            }
+
+            &:hover p {
+                opacity: 1;
+            }
+        }
+
+        &.img-right {
+            flex-direction: row-reverse;
+
+            p {
+                order: 1;
+            }
+
+            &:hover p {
+                opacity: 1;
+            }
+        }
+    }
 }
