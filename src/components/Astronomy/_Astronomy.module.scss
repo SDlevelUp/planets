@@ -35,16 +35,23 @@
 
         img {
             max-width: 20rem;
-            border: 3px solid $white;
+            border: 3px solid red;
             border-radius: 0.9rem;
             margin-right: 1.5rem;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.5s, transform 0.5s;
         }
 
         p {
             margin: 0;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-            cursor: pointer;
+        }
+
+        &.animate {
+            img {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         &.img-left {
@@ -52,8 +59,12 @@
                 order: 2;
             }
 
-            &:hover p {
-                opacity: 1;
+            &:nth-child(2) {
+                transition-delay: 0.2s;
+            }
+
+            &:nth-child(3) {
+                transition-delay: 0.4s;
             }
         }
 
@@ -64,8 +75,12 @@
                 order: 1;
             }
 
-            &:hover p {
-                opacity: 1;
+            &:nth-child(2) {
+                transition-delay: 0.2s;
+            }
+
+            &:nth-child(3) {
+                transition-delay: 0.4s;
             }
         }
     }
