@@ -5,7 +5,8 @@ import FlippableCard from './FlippableCard';
 import Footer from './components/Footer/Footer';
 import Astronomy from './components/Astronomy/Astronomy';
 import Contact from './components/Contact/Contact';
-import { menuItems } from './menuItems';
+import Quiz from './components/Quiz/Quiz';
+import { menuItems } from './js/menuItems';
 function App() {
     return (
         <>
@@ -14,6 +15,7 @@ function App() {
                 <Route path='/' element={<Home />} exact />
                 <Route path='/galerie' element={<FlippableCard />} />
                 <Route path='/astronomie' element={<Astronomy />} />
+                <Route path='/astronomie/quiz' element={<Quiz />} />
                 <Route path='/contact' element={<Contact />} />
             </Routes>
             <Footer />

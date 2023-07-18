@@ -19,13 +19,14 @@
 }
 
 .astronomy-presentation {
-    margin: 9rem auto;
+    margin: 2.5rem auto;
     width: 70%;
 
     h1 {
         display: flex;
         justify-content: center;
         text-align: center;
+        height: 10rem;
     }
 
     div {
@@ -60,11 +61,11 @@
             }
 
             &:nth-child(2) {
-                transition-delay: 0.2s;
+                transition-delay: 0.3s;
             }
 
             &:nth-child(3) {
-                transition-delay: 0.4s;
+                transition-delay: 0.5s;
             }
         }
 
@@ -76,11 +77,11 @@
             }
 
             &:nth-child(2) {
-                transition-delay: 0.2s;
+                transition-delay: 0.3s;
             }
 
             &:nth-child(3) {
-                transition-delay: 0.4s;
+                transition-delay: 0.5s;
             }
         }
     }

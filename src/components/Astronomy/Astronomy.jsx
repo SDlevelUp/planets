@@ -3,6 +3,7 @@ import styles from './_Astronomy.module.scss';
 import mars from '../../assets/mars.jpg';
 import travel from '../../assets/travel.jpg';
 
+
 const Astronomy = () => {
     const imageContainerRef = useRef(null);
     const [animateImages, setAnimateImages] = useState(false);
@@ -52,7 +53,7 @@ const Astronomy = () => {
                 <div className={`${styles['img-left']} ${animateImages ? styles['animate'] : ''}`}>
                     <img src={travel} alt="Astronaute dans l'espace" />
                     <p className={styles['p-presentation-exploration']}>
-                        La partie "Exploration" vous offre une expérience immersive à travers une sélection captivante de vidéos sur l'exploration spatiale.
+                        Vivez une expérience immersive à travers une sélection captivante de vidéos sur l'exploration spatiale.
                         Plongez dans les missions historiques et actuelles qui ont permis à l'humanité de repousser les frontières de l'espace. Regardez des
                         vidéos époustouflantes des premiers pas de l'homme sur la Lune lors de la mission Apollo, revivez les moments forts des missions de
                         la navette spatiale, et découvrez les incroyables découvertes réalisées par les sondes spatiales qui ont exploré des planètes lointaines

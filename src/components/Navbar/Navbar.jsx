@@ -4,7 +4,7 @@ import Chevron from '../Chevron';
 import SubMenu from '../SubMenu';
 import styles from './_Navbar.module.scss';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { menuItems } from '../../menuItems';
+import { menuItems } from '../../js/menuItems';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
