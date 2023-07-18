@@ -32,7 +32,8 @@
     div {
         display: flex;
         align-items: center;
-        margin-bottom: 1.5rem;
+        margin-bottom: 6rem;
+
 
         img {
             max-width: 15rem;
@@ -82,6 +83,58 @@
 
             &:nth-child(3) {
                 transition-delay: 0.5s;
+            }
+        }
+    }
+}
+
+@include breakpoint(mobile) {
+    .astronomy-presentation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 2.5rem auto;
+        width: 90%;
+
+
+        h1 {
+            height: auto;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 4rem;
+
+            img {
+                margin: 0 auto;
+            }
+
+            &.animate {
+                img {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            &.img-left,
+            &.img-right {
+                flex-direction: column;
+
+                p {
+                    order: 2;
+                }
+
+                &:nth-child(2) {
+                    transition-delay: 0.3s;
+                }
+
+                &:nth-child(3) {
+                    transition-delay: 0.5s;
+                }
             }
         }
     }
