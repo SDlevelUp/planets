@@ -1,0 +1,38 @@
+@import '../../scss/utils/_variables.scss';
+@import '../../scss/utils/_colors.scss';
+
+
+.result {
+    text-align: center;
+
+    h3 {
+        font-size: 1.5rem;
+        letter-spacing: 0.09rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $black;
+
+        span {
+            color: green;
+            font-size: 1.4rem;
+        }
+    }
+
+    table {
+        width: 50%;
+        text-align: left;
+        margin: 3.3rem auto 1.25rem;
+        border-collapse: collapse;
+
+        tr {
+            border: 1px solid $black;
+        }
+
+    }
+
+
+}

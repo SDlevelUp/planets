@@ -44,9 +44,9 @@ const PlanetsCard = ({ onClick }) => {
             </div>
             <div className={styles['planet-card-presentation']}>
                 <h1>PlanetaryPix</h1>
-                <p className={styles['p-presentation']}>
+                <span className={styles['span-presentation']}>
                     Bienvenue dans l'aventure, jeune explorateur !
-                </p>
+                </span>
                 <p>
                     Dans cette partie, tu découvriras ou redécouvriras
                     des informations utiles sur les planètes du système

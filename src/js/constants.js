@@ -10,7 +10,7 @@ export const quiz = {
                 "Pluton",
             ],
             type: "MCQs",
-            correctAnsswer: "Mercure",
+            correctAnswer: "Mercure",
         },
         {
             question:
@@ -22,7 +22,7 @@ export const quiz = {
                 "Orange",
             ],
             type: "MCQs",
-            correctAnsswer: "Bleu-vert",
+            correctAnswer: "Bleu-vert",
         },
         {
             question:
@@ -34,7 +34,7 @@ export const quiz = {
                 "Rocheuse",
             ],
             type: "MCQs",
-            correctAnsswer: "Gazeuse",
+            correctAnswer: "Gazeuse",
         },
         {
             question:
@@ -43,7 +43,7 @@ export const quiz = {
                 "Neptune",
                 "Mars",
                 "Mercure",
-                "Pluton",
+                "Toutes les réponses sont correctes",
             ],
             type: "MCQs",
             correctAnsswer: "Mercure",
@@ -58,7 +58,7 @@ export const quiz = {
                 "Distance au soleil",
             ],
             type: "MCQs",
-            correctAnsswer: "Ses anneaux spectaculaires",
+            correctAnswer: "Ses anneaux spectaculaires",
         },
         {
             question:
@@ -82,12 +82,12 @@ export const quiz = {
                 "Pluton",
             ],
             type: "MCQs",
-            correctAnsswer: "Jupiter",
+            correctAnswer: "Jupiter",
         },
-
-
-
-
-
     ]
 }
+export const resultInitalState = {
+    score: 0,
+    correctAnswers: 0,
+    wrongAnswers: 0,
+};

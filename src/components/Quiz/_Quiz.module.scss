@@ -1,13 +1,111 @@
+@import '../../scss/utils/_colors';
+@import '../../scss/utils/_variables';
+@import '../../scss/utils/_mixins';
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/Roboto-Regular-webfont.woff') format('woff');
+}
+
+.quiz-container-row {
+    display: flex;
+    justify-content: center;
+    margin: 8rem auto;
+    padding: 0 2rem;
+    height: auto;
+}
+
 .quiz-container {
-    background-color: rgb(0, 0, 0);
-    margin: 9rem auto;
-    height: 100vh;
+    font-family: $font-family2;
+    width: 52rem;
+    background-color: $white;
+    border-radius: 2%;
+    margin-top: 6rem;
+    padding: 2rem 3.75rem;
+    box-sizing: border-box;
+    box-shadow: $box-shadow3;
 
-
-    h1 {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        height: 10rem;
+    .active-question-no {
+        font-size: 2rem;
+        font-weight: 500;
+        color: $black;
     }
+
+    .total-question {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $disable;
+    }
+
+    h2 {
+        margin: 0;
+        font-weight: 500;
+    }
+
+    ul {
+        margin-top: 1.25rem;
+        margin-left: -2.5rem;
+
+        li {
+            text-decoration: none;
+            list-style: none;
+            color: $black;
+            font-size: 1rem;
+            border: 0.1rem solid $disable;
+            border-radius: 16px;
+            padding: 11px;
+            margin-top: 15px;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            cursor: pointer;
+            text-align: center;
+            display: block;
+        }
+
+        .selected-answer {
+            background-image: $linear-gradient-answer;
+            border: 1px solid $disable;
+            color: $white;
+
+            &:hover {
+                background-position: right center;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    button {
+        border-radius: 1rem;
+        font-size: 1.1rem;
+        color: $white;
+        cursor: pointer;
+        padding: 0.6rem 2.7rem;
+        background-image: $linear-gradient-answer;
+        transition: 0.5s;
+        background-size: 200% auto;
+        outline: none;
+        border: none;
+        margin-top: 1rem;
+
+        &:disabled {
+            background-image: red;
+            color: $disable;
+            cursor: not-allowed;
+        }
+
+        &:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+
 }

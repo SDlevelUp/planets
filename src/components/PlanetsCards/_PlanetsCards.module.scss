@@ -35,14 +35,10 @@
         }
     }
 
-    .p-presentation {
+    .span-presentation {
         text-transform: uppercase;
         font-size: 2rem;
-        background: linear-gradient(to right,
-                #003399 20%,
-                #336699 30%,
-                #CCCCCC 70%,
-                #336699 80%);
+        background-image: $linear-gradient-p;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -202,7 +198,7 @@
 
             font-size: 4em;
             color: #fff;
-            background-image: $liear-gradient-card;
+            background-image: $linear-gradient-card;
             box-shadow: $box-shadow2;
         }
     }
