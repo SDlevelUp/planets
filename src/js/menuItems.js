@@ -6,7 +6,7 @@ export const menuItems = [
         path: "/",
         submenu: [
             { title: "L'Astronium", path: "/astronomie" },
-            { title: "Systeme solaire", path: "/astronomie/systemesolaire" },
+            { title: "Videos", path: "/astronomie/Videos" },
             { title: "Quiz", path: "/astronomie/quiz" },
         ],
     },

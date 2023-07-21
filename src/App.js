@@ -10,7 +10,7 @@ import Footer from './components/Footer/Footer';
 import Astronomy from './components/Astronomy/Astronomy';
 import Contact from './components/Contact/Contact';
 import Quiz from './components/Quiz/Quiz';
-import SolarSystem from './components/SolarSystem/SolarSystem';
+import Videos from './components/Videos/Videos';
 
 function App() {
     return (
@@ -21,7 +21,7 @@ function App() {
                 <Route path='/galerie' element={<FlippableCard />} />
                 <Route path='/astronomie' element={<Astronomy />} />
                 <Route path='/astronomie/quiz' element={<Quiz questions={quiz.questions}  />} />
-                <Route path='/astronomie/systemesolaire' element={<SolarSystem />} />
+                <Route path='/astronomie/videos' element={<Videos />} />
                 <Route path='/contact' element={<Contact />} />
             </Routes>
             <Footer />
