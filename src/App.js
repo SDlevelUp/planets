@@ -20,7 +20,7 @@ function App() {
                 <Route path='/' element={<Home />} exact />
                 <Route path='/galerie' element={<FlippableCard />} />
                 <Route path='/astronomie' element={<Astronomy />} />
-                <Route path='/astronomie/quiz' element={<Quiz questions={quiz.questions}  />} />
+                <Route path='/astronomie/quiz' element={<Quiz questions={quiz.questions} />} />
                 <Route path='/astronomie/videos' element={<Videos />} />
                 <Route path='/contact' element={<Contact />} />
             </Routes>
