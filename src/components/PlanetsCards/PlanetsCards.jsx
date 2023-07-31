@@ -57,7 +57,6 @@ const PlanetsCard = ({ onClick }) => {
                     utiles pour chaque planète.
                     Essaies, et tu verras ! 👩‍🚀
                 </p>
-
             </div>
             <div className={styles['planet-card-container']}>
                 {PlanetsData.map((planet) => (

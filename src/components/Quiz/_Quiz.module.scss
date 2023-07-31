@@ -10,7 +10,7 @@
 .quiz-container-row {
     display: flex;
     justify-content: center;
-    margin: 8rem auto;
+    margin: 10rem auto;
     padding: 0 2rem;
     height: auto;
 }
@@ -21,9 +21,10 @@
     background-color: $white;
     border-radius: 2%;
     margin-top: 6rem;
-    padding: 2rem 3.75rem;
+    padding: 2rem;
     box-sizing: border-box;
     box-shadow: $box-shadow3;
+    margin-bottom: 3rem;
 
     .active-question-no {
         font-size: 2rem;
@@ -106,6 +107,4 @@
             text-decoration: none;
         }
     }
-
-
 }

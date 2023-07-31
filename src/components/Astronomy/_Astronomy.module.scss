@@ -20,7 +20,7 @@
 
 .astronomy-presentation {
     margin: 2.5rem auto;
-    width: 70%;
+    width: 60%;
 
     h1 {
         display: flex;
@@ -29,11 +29,16 @@
         height: 10rem;
     }
 
+    .p-presentation-quiz {
+        text-align: justify;
+        width: 60%;
+        margin-right: 2.5rem;
+    }
+
     div {
         display: flex;
         align-items: center;
-        margin-bottom: 6rem;
-
+        margin-bottom: 4rem;
 
         img {
             max-width: 15rem;
@@ -42,11 +47,13 @@
             margin-right: 2rem;
             opacity: 0;
             transform: translateY(40px);
-            transition: opacity 0.5s, transform 0.5s;
+            transition: opacity 0.5s, transform 3s;
         }
 
         p {
             margin: 0;
+            text-align: justify;
+            width: 60%;
         }
 
         &.animate {
@@ -96,7 +103,6 @@
         text-align: center;
         margin: 2.5rem auto;
         width: 90%;
-
 
         h1 {
             height: auto;
